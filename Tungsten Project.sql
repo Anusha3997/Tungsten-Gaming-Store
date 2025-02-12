@@ -1,9 +1,5 @@
---Project: TUNGSTEN GAMING STORE
---Course Number: 6080
---Course Title: Database Management System
---Semester: Fall 2024
 --Name: Anusha Nagula
---Group Number: 6
+
 --Tables:
 /*1.		Customers:(CUST_ID, CUST_NAME, Email, ADDRESS, Phone, CITY, STATE, TOTAL_SPEND, MEM_STATUS)
 Primary Key:CUST_ID 
