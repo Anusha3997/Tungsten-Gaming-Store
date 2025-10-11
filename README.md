@@ -3,7 +3,7 @@
 A complete Oracle SQL–based database system designed to manage customer, product, order, and inventory data for a gaming retail store.  
 ---
 
-## 🧩 Key Features
+##  Key Features
 - 9 interrelated tables (Customers, Products, Orders, Suppliers, etc.)
 - Fully normalized schema with primary and foreign key constraints  
 - Populated sample data for realistic queries  
@@ -12,7 +12,10 @@ A complete Oracle SQL–based database system designed to manage customer, produ
   - Subqueries and aggregate functions  
   - Set operations for business insights
  
-## ⚙️ Tech Stack
+##  Tech Stack
 **Database**: Oracle SQL
 **Tools**: SQL Developer
 **Language**: SQL (DDL, DML, DQL)
+
+## Author
+Anusha Nagula
