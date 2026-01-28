@@ -63,6 +63,5 @@ User: admin
 Password: admin
 
 ## Author
-- Anusha Nagula
-- Data Engineer | Backend Engineer | AI/ML Platform Engineer
-- GitHub: https://github.com/Anusha3997
+Anusha Nagula
+
