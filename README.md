@@ -19,7 +19,7 @@ This project demonstrates **data modeling, schema design, constraints, indexing,
 ## 📐 Architecture
 
 ### Entity Relationship Diagram
-![ERD](erd/erd.png)
+![ERD](erd/ERD.png)
 
 ---
 
