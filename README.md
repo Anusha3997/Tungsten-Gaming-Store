@@ -1,21 +1,68 @@
-#  Tungsten Gaming Store – Database Project
+# 🎮 Tungsten Gaming Store – Retail Database System
 
-A complete Oracle SQL–based database system designed to manage customer, product, order, and inventory data for a gaming retail store.  
+A production-style PostgreSQL database designed for a gaming retail store to manage customers, products, orders, and inventory.
+
+This project demonstrates **data modeling, schema design, constraints, indexing, and containerized deployment** — similar to real-world backend and data engineering systems.
+
 ---
 
-##  Key Features
-- 9 interrelated tables (Customers, Products, Orders, Suppliers, etc.)
-- Fully normalized schema with primary and foreign key constraints  
-- Populated sample data for realistic queries  
-- Queries demonstrating:
-  - INNER, OUTER, and SELF joins  
-  - Subqueries and aggregate functions  
-  - Set operations for business insights
- 
-##  Tech Stack
-**Database**: Oracle SQL
-**Tools**: SQL Developer
-**Language**: SQL (DDL, DML, DQL)
+## 🚀 Tech Stack
+
+- PostgreSQL 16
+- Docker & Docker Compose
+- SQL (DDL, DML, Constraints, Indexing)
+- DBeaver
+- dbdiagram.io (ERD design)
+
+---
+
+## 📐 Architecture
+
+### Entity Relationship Diagram
+![ERD](erd/erd.png)
+
+---
+
+## 🗄️ Database Design Highlights
+
+### ✅ Schema Design
+- Normalized to **3NF**
+- Separate tables for customers, products, orders, order_details, inventory
+- Surrogate primary keys (SERIAL)
+
+### ✅ Data Integrity
+- NOT NULL constraints
+- UNIQUE email enforcement
+- Foreign key relationships
+- CHECK constraints (price > 0, quantity ≥ 0)
+
+### ✅ Performance
+- Indexes on foreign keys and join columns
+- Optimized for faster queries and analytics
+
+### ✅ Deployment
+- Dockerized PostgreSQL instance
+- Auto-loads schema + seed data on startup
+
+---
+
+## ⚡ Quick Start (Run Locally)
+
+### 1. Clone repo
+git clone https://github.com/Anusha3997/Tungsten-Gaming-Store.git
+cd Tungsten-Gaming-Store
+
+### 2. Start database
+docker-compose up
+
+### 3. Connect via DBeaver
+Host: localhost
+Port: 5432
+Database: tungsten
+User: admin
+Password: admin
 
 ## Author
 Anusha Nagula
+Data Engineer | Backend Engineer | AI/ML Platform Engineer
+GitHub: https://github.com/Anusha3997
