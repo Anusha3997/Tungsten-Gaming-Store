@@ -1,0 +1,12 @@
+EMP_ID,ENAME,JOB,DEPT_NO,HIRE_DATE
+7839,King,President,201,2011-04-02
+7698,Blake,Manager,201,2012-05-01
+7782,Clark,Cashier,202,2013-06-09
+7566,Jones,Salesman,203,2011-11-17
+7499,Allen,Manager,203,2013-02-20
+7844,Turner,Cashier,202,2014-09-08
+7900,James,Salesman,204,2015-12-03
+7902,Ford,Manager,204,2016-12-03
+7369,Smith,Cashier,202,2015-12-17
+7788,Scott,Salesman,205,2015-12-17
+7934,Miller,Manager,205,2016-01-23

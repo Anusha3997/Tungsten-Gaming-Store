@@ -1,0 +1,11 @@
+PROD_ID,PROD_NAME,PRICE,CATEGORY,STOCK_QTY,SUPPLIER_ID
+100860,Gaming Headset T,10.0,Electronics,20,10002
+100861,Wireless Joystick Q,5.0,Electronics,9,10005
+100870,Wireless Mouse Q,6.5,Electronics,11,10002
+100871,External SSD Y,18.0,Electronics,4,10005
+100890,RGB Keyboard BB,14.0,Electronics,6,10002
+101860,Gaming Chair I,30.0,Accessories,4,10004
+101863,Gaming Chair II,40.0,Accessories,3,10004
+102130,NFS CD,5.0,CDs/DVDs,10,10001
+200376,PUBG CD,9.0,CDs/DVDs,20,10003
+200380,Racing CD,7.5,CDs/DVDs,25,10001
