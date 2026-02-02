@@ -41,20 +41,22 @@ Now the data is ready to be imported
 ---
 
 ## Step 4 – Altering the data:
--	All the Table names are in upper case. In DBeaver it is better to use all lower-case snake_case because it is case sensitive. To access upper case column names, we need to use double quotes which becomes difficult. So, I converted them to lower case snake_case. { ALTER TABLE customer RENAME COLUMN "CUST_NAME" TO cust_name;
-ALTER TABLE customer RENAME COLUMN "CUST_ID" TO cust_id;}
-- Synthetic salary data was generated to simulate realistic business scenarios and enable meaningful analytics. 
-UPDATE employees
-SET salary =
-CASE
-    WHEN job = 'President' THEN 150000
-    WHEN job = 'Manager'   THEN 95000 + (random()*10000)
-    WHEN job = 'Salesman'  THEN 60000 + (random()*10000)
-    WHEN job = 'Cashier'   THEN 35000 + (random()*5000)
-END;
+-	All the Table names are in upper case. In DBeaver it is better to use all lower-case snake_case because it is case sensitive. To access upper case column names, we need to use double quotes which becomes difficult. So, I converted them to lower case snake_case.
+      ALTER TABLE customer RENAME COLUMN "CUST_NAME" TO cust_name;
+ALTER TABLE customer RENAME COLUMN "CUST_ID" TO cust_id;
+- Synthetic salary data was generated to simulate realistic business scenarios and enable meaningful analytics.
+    UPDATE employees
+    SET salary =
+    CASE
+        WHEN job = 'President' THEN 150000
+        WHEN job = 'Manager'   THEN 95000 + (random()*10000)
+        WHEN job = 'Salesman'  THEN 60000 + (random()*10000)
+        WHEN job = 'Cashier'   THEN 35000 + (random()*5000)
+    END;
 
 -	Additional synthetic records were generated to increase dataset volume and better simulate real-world transaction loads. So, I randomly generated rows for tables
-    -	Orders: 
+    -	Orders:
+      
         INSERT INTO orders (ord_id, cust_id, ord_date, total_amt, emp_id)
         SELECT
             generate_series(500016, 500080),                      -- INT ids
@@ -80,6 +82,7 @@ END;
         WHERE orders.ord_id = o.ord_id
         AND (o.rn % 3) + 1 = s.rn;
     -	Orderdetails:
+      
         INSERT INTO orderdetails (orderdetail_id, order_id, product_id, quantity, price)
         SELECT
             ROW_NUMBER() OVER () + (SELECT MAX(orderdetail_id) FROM orderdetails) AS orderdetail_id,
@@ -97,16 +100,20 @@ Now the data is all set.
 
 ## Step 5 - Adding Constraints:
 Now I have added the Primary key , Foreign Key, Unique and >0 constraints:
--	Primary keys: 
+-	Primary keys:
+   
     ALTER TABLE customer 
     ADD CONSTRAINT customer_pkey PRIMARY KEY (cust_id);
 -	Foreign Keys:
+  
     ALTER TABLE employees 
     ADD CONSTRAINT fk_employee_department FOREIGN KEY (dept_id) REFERENCES public.department(dept_id)
 -	Unique Keys:
+  
     ALTER TABLE customer 
     ADD CONSTRAINT unique_customer_email UNIQUE (email)
 -	> 0:
+  
     ALTER TABLE product
     ADD CONSTRAINT chk_price_positive CHECK ((price > (0)::numeric))
 
