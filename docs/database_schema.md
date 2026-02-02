@@ -25,27 +25,32 @@ state
 total_spent
 ```
 - Membership
-Column	Key
+```Column	Key
 mem_id	PK
 cust_id	FK → customer
 mem_status	
 points	
-reg_date	
+reg_date
+```	
 - Orders
-Column	Key
+```Column	Key
 order_id	PK
 cust_id	FK → customer
 emp_id	FK → employees
 order_date	
 total_amount	
+```
 - OrderDetails
+```
 Column	Key
 orderdetail_id	PK
 order_id	FK → orders
 product_id	FK → product
 quantity	
 price	
+```
 - Product
+```
 Column	Key
 product_id	PK
 product_name	
@@ -53,20 +58,26 @@ category
 price	
 supplier_id	FK → supplier
 stock_quantity	
+```
 - Supplier
+```
 Column	Key
 supplier_id	PK
 supplier_name	
 contact_name	
 supplier_phone	
 supplier_address	
+```
 - Inventory
+```
 Column	Key
 inventory_id	PK
 product_id	FK → product
 stock_quantity	
 last_restocked	
+```
 - Employees
+```
 Column	Key
 emp_id	PK
 emp_name	
@@ -74,11 +85,13 @@ job
 dept_id	FK → department
 hire_date	
 salary	
+```
 - Department
+```
 Column	Key
 dept_id	PK
 dept_name	
-
+```
 ----
 
 ## 🔗 Relationships
