@@ -41,8 +41,7 @@ order_date
 total_amount	
 ```
 - OrderDetails
-```
-Column	Key
+```Column	Key
 orderdetail_id	PK
 order_id	FK → orders
 product_id	FK → product
@@ -50,8 +49,7 @@ quantity
 price	
 ```
 - Product
-```
-Column	Key
+```Column	Key
 product_id	PK
 product_name	
 category	
@@ -60,8 +58,7 @@ supplier_id	FK → supplier
 stock_quantity	
 ```
 - Supplier
-```
-Column	Key
+```Column	Key
 supplier_id	PK
 supplier_name	
 contact_name	
@@ -69,16 +66,14 @@ supplier_phone
 supplier_address	
 ```
 - Inventory
-```
-Column	Key
+```Column	Key
 inventory_id	PK
 product_id	FK → product
 stock_quantity	
 last_restocked	
 ```
 - Employees
-```
-Column	Key
+```Column	Key
 emp_id	PK
 emp_name	
 job	
@@ -87,8 +82,7 @@ hire_date
 salary	
 ```
 - Department
-```
-Column	Key
+```Column	Key
 dept_id	PK
 dept_name	
 ```
