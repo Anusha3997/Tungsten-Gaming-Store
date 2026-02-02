@@ -64,14 +64,15 @@ This project demonstrates **data modeling, schema design, constraints, indexing,
 
 ## ⚡ Quick Start (Run Locally)
 
-``` 1. Clone repo
+``` 
+1. Clone repo
 git clone https://github.com/Anusha3997/Tungsten-Gaming-Store.git
 cd Tungsten-Gaming-Store
 
-### 2. Start database
+2. Start database
 docker-compose up
 
-### 3. Connect via DBeaver
+3. Connect via DBeaver
 Host: localhost
 Port: 5432
 Database: tungsten
