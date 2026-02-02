@@ -51,8 +51,7 @@ This project demonstrates **data modeling, schema design, constraints, indexing,
 
 ---
 
-##
-🎯 Lessons Learned
+## 🎯 Lessons Learned
 - Designed a normalized schema to reduce redundancy and improve data integrity
 - Used Docker for reproducible and portable database setup
 - Cleaned and standardized data before import to avoid loading issues
