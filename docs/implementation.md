@@ -45,7 +45,7 @@ Now the data is ready to be imported
       ALTER TABLE customer RENAME COLUMN "CUST_NAME" TO cust_name;
 ALTER TABLE customer RENAME COLUMN "CUST_ID" TO cust_id;
 - Synthetic salary data was generated to simulate realistic business scenarios and enable meaningful analytics.
-    UPDATE employees
+  ```UPDATE employees
     SET salary =
     CASE
         WHEN job = 'President' THEN 150000
@@ -53,7 +53,7 @@ ALTER TABLE customer RENAME COLUMN "CUST_ID" TO cust_id;
         WHEN job = 'Salesman'  THEN 60000 + (random()*10000)
         WHEN job = 'Cashier'   THEN 35000 + (random()*5000)
     END;
-
+    ```
 -	Additional synthetic records were generated to increase dataset volume and better simulate real-world transaction loads. So, I randomly generated rows for tables
     -	Orders:
       
