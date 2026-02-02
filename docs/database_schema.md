@@ -89,11 +89,11 @@ dept_name
 ----
 
 ## 🔗 Relationships
-One Customer → many Orders
-One Order → many OrderDetails
-One Product → many OrderDetails
-One Supplier → many Products
-One Product → one Inventory record
-One Employee → many Orders
-One Department → many Employees
-One Customer → zero or one Membership
+- One Customer → many Orders
+- One Order → many OrderDetails
+- One Product → many OrderDetails
+- One Supplier → many Products
+- One Product → one Inventory record
+- One Employee → many Orders
+- One Department → many Employees
+- One Customer → zero or one Membership
