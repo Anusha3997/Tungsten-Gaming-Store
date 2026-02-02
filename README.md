@@ -51,9 +51,21 @@ This project demonstrates **data modeling, schema design, constraints, indexing,
 
 ---
 
+##
+🎯 Lessons Learned
+- Designed a normalized schema to reduce redundancy and improve data integrity
+- Used Docker for reproducible and portable database setup
+- Cleaned and standardized data before import to avoid loading issues
+- Enforced data quality using primary keys, foreign keys, and constraints
+- Added indexes to speed up joins and query performance
+- Generated synthetic data to simulate real-world transactions for testing
+- Validated the design using analytics queries (revenue, orders, inventory)
+
+---
+
 ## ⚡ Quick Start (Run Locally)
 
-### 1. Clone repo
+``` 1. Clone repo
 git clone https://github.com/Anusha3997/Tungsten-Gaming-Store.git
 cd Tungsten-Gaming-Store
 
@@ -66,6 +78,7 @@ Port: 5432
 Database: tungsten
 User: admin
 Password: admin
+```
 
 ## Author
 Anusha Nagula
