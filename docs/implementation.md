@@ -4,8 +4,7 @@
 - Since I already have Docker, I ran Postgres on Docker container.
 
     In terminal, 
-        ```docker run --name tungsten-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=tungsten -p 5432:5432 -d postgres
-  ```
+```docker run --name tungsten-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=tungsten -p 5432:5432 -d postgres ```
   
 #### Meaning: 
 docker run = Start a container
