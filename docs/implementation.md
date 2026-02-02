@@ -3,20 +3,20 @@
 ## Step 1 – Setup: 
 - Since I already have Docker, I ran Postgres on Docker container.
 
-In terminal, 
-    docker run --name tungsten-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=tungsten -p 5432:5432 -d postgres
-#### Meaning: 
-docker run = Start a container
-
---name tungsten-postgres = Give it a name (so you can restart later)
-
--e POSTGRES_PASSWORD=postgres = Sets password = postgres
-
--e POSTGRES_DB=tungsten = Creates database called tungsten
-
--p 5432:5432 = Connect laptop → container
-
--d postgres = Use official postgres image + run in background
+    In terminal, 
+        docker run --name tungsten-postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=tungsten -p 5432:5432 -d postgres
+    #### Meaning: 
+    docker run = Start a container
+    
+    --name tungsten-postgres = Give it a name (so you can restart later)
+    
+    -e POSTGRES_PASSWORD=postgres = Sets password = postgres
+    
+    -e POSTGRES_DB=tungsten = Creates database called tungsten
+    
+    -p 5432:5432 = Connect laptop → container
+    
+    -d postgres = Use official postgres image + run in background
 
 - Installed GUI – I used DBeaver and gave connection
 Host: localhost
