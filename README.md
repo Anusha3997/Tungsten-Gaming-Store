@@ -2,7 +2,7 @@
 
 A production-style PostgreSQL database designed for a gaming retail store to manage customers, products, orders, and inventory.
 
-This project demonstrates **data modeling, schema design, constraints, indexing, and containerized deployment** — similar to real-world backend and data engineering systems.
+This project demonstrates **data modeling, schema design, constraints, indexing, and containerized deployment**  similar to real-world backend and data engineering systems.
 
 ---
 
